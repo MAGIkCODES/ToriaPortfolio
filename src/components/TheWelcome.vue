@@ -8,18 +8,22 @@
 
 <style scoped>
 .hero-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
   background: linear-gradient(to right, #a3c9d6, #6eb8d1);
   max-width: 100%;
-  padding: 20px;
-  margin: 30px 40px;
-  text-align: center;
+  height: 450px;
+  margin: 30px;
+  align-items: center;
   border-radius: 8px;
   color: rgb(29, 27, 27);
   
 }
 
 h1 {
-  font-size: 9rem;
+  font-size: 9em;
   font-weight: 600;
 }
 
@@ -45,4 +49,35 @@ button {
 button:hover {
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.00);
 }
+
+@media (max-width: 768px) {
+  .hero-text {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 5em;
+  }
+
+
+}
+
+/* @media (max-width: 320px) {
+  h1 {
+    font-size: 3em;
+  }
+  
+  p {
+    font-size: 1.5em;
+  }
+
+  button {
+    display: block;
+    padding: 15px;
+    font-size: 10px;
+  }
+
+} */
+
 </style>

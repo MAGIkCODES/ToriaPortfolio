@@ -9,13 +9,21 @@ footer {
     font-size: 20px;
     color: #000;
     text-align: center;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     color: white;
+    margin-top: 20px;
     }
     
     p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    @media (max-width: 768px) {
+
+        p {
+         font-size:1rem ;
+        }
     }
 </style>

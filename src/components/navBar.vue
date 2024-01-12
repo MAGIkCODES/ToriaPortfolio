@@ -20,9 +20,9 @@ const toggleMenu = () => {
         <RouterLink to="">About</RouterLink>
     </nav> 
     <button class="btn">Get my resume</button>
-    <div class="hamburger-menu" @click="toggleMenu">
-        <span>&#9776;</span>
-    </div>
+    <!-- <div class="hamburger-menu" @click="toggleMenu"> -->
+        <!-- <span>&#9776;</span> -->
+    <!-- </div> -->
   </header>
   <!-- <nav :class="{'show-menu': isMenuOpen}">
         <RouterLink active-class="active" to="/">Home</RouterLink>
@@ -33,18 +33,18 @@ const toggleMenu = () => {
 
 <style scoped>
 header {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background: white;
-  align-items: center;
   padding: 20px;
   text-transform: uppercase;
 }
 
-.logo {
+/* .logo {
  
-}
+} */
 
  .logo img {
   max-width: 200px; 
@@ -61,7 +61,7 @@ nav a {
   font-weight: 600;
   text-decoration: none;
   color: #333;
-  margin-right: 20px;
+  margin: 20px;
   transition: color 1.3s ease-in-out;
 }
 
@@ -116,7 +116,8 @@ nav.show-menu  {
 @media (max-width: 768px){
   header {
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: space-evenly;
+    /* align-items: flex-start; */
   }
 
   nav.links {
@@ -132,10 +133,23 @@ nav.show-menu  {
   }
 
   .btn {
-    display: none;
+    display: block;
+    padding: 10px;
+    font-size: 10px;
   }
 
+  .logo img {
+    width: 100px;
+  }
  
+}
+
+@media (max-width: 320px) {
+  header {
+    /* flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; */
+  }
 }
 </style>
 
