@@ -9,7 +9,6 @@ footer {
     font-size: 20px;
     color: #000;
     text-align: center;
-    /* position: fixed; */
     bottom: 0;
     width: 100%;
     color: white;
@@ -17,13 +16,13 @@ footer {
     }
     
     p {
-        font-size: 1.1rem;
+        font-size: 15px;
     }
 
     @media (max-width: 768px) {
 
         p {
-         font-size:1rem ;
+         font-size:12px ;
         }
     }
 </style>
